@@ -1,0 +1,14 @@
+﻿@using Tarea08MonograficoNelson
+@using Tarea08MonograficoNelson.Models
+@using Microsoft.Extensions.Options;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@addTagHelper *,DNTBreadCrumb.Core
+
+@using ReflectionIT.Mvc.Paging
+@addTagHelper *, ReflectionIT.Mvc.Paging
+
+@* aqui podemos poner los valores que queremos que se vean en todas las vistas*@
+
+@inject IOptions<GlobalSetting> _gSettings
+@inject IOptions<AppSettings> _appSettings
