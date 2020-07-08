@@ -45,7 +45,7 @@ namespace Tarea08MonograficoNelson.Controllers
                 personas = new List<Persona>() {
 
                     new Persona() {IdPersona=1, Nombre = "Nelson", Apellido="Abreu", FechaNacimiento=DateTime.Now, Telefono="2223434"},
-                    new Persona() { IdPersona=2, Nombre = "Juan", Apellido="De los Palotes", FechaNacimiento=DateTime.Now, Telefono="2223434"},
+                  /*  new Persona() { IdPersona=2, Nombre = "Juan", Apellido="De los Palotes", FechaNacimiento=DateTime.Now, Telefono="2223434"},
                     new Persona() {IdPersona=3, Nombre = "Nelson", Apellido="Abreu", FechaNacimiento=DateTime.Now, Telefono="2223434"},
                     new Persona() {IdPersona=4, Nombre = "Juan", Apellido="De los Palotes", FechaNacimiento=DateTime.Now, Telefono="2223434"},
                     new Persona() {IdPersona=5, Nombre = "Nelson", Apellido="Abreu", FechaNacimiento=DateTime.Now, Telefono="2223434"},
@@ -64,7 +64,7 @@ namespace Tarea08MonograficoNelson.Controllers
                     new Persona() {IdPersona=18, Nombre = "Juan", Apellido="De los Palotes", FechaNacimiento=DateTime.Now, Telefono="2223434"},
                     new Persona() {IdPersona=19, Nombre = "Nelson", Apellido="Abreu", FechaNacimiento=DateTime.Now, Telefono="2223434"},
                     new Persona() {IdPersona=20, Nombre = "Juan", Apellido="De los Palotes", FechaNacimiento=DateTime.Now, Telefono="2223434"}
-                };
+                */};
             }
             StringBuilder filtro = new StringBuilder();
             filtro.Append("Inactivo == false");

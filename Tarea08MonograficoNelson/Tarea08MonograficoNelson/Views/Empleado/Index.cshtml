@@ -1,0 +1,155 @@
+﻿@model IEnumerable<Tarea08MonograficoNelson.Models.Empleado>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaIngreso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoCivil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ocupación)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoSangre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nacionalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Religión)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Teléfono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dirección)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalarioM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartamentoPertene)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreContactSos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefonoContactSos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AfpPertenece)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArsPertenece)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observaciones)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaIngreso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoCivil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ocupación)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoSangre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nacionalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Religión)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Teléfono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dirección)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalarioM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartamentoPertene)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreContactSos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoContactSos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AfpPertenece)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArsPertenece)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observaciones)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdEmpleado">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdEmpleado">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdEmpleado">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

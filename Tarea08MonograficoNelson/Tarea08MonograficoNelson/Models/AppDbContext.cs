@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Tarea08MonograficoNelson.Models;
 
 namespace Tarea08MonograficoNelson.Models
 {
@@ -26,6 +27,14 @@ namespace Tarea08MonograficoNelson.Models
         {
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<Tarea08MonograficoNelson.Models.Estudiantes> Estudiantes { get; set; }
+
+        public DbSet<Tarea08MonograficoNelson.Models.Empleado> Empleado { get; set; }
+
+        public DbSet<Tarea08MonograficoNelson.Models.Profesor> Profesor { get; set; }
+
+        public DbSet<Tarea08MonograficoNelson.Models.Persona> Persona { get; set; }
 
     }
 }
